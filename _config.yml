@@ -1,3 +1,10 @@
 theme: jekyll-theme-cayman
 title: [TITLE]
 description: [Description]
+colors:
+    gradient_left: "#c2185b"
+    gradient_right: "#4a148c"
+    header: "#fff"
+    android_theme: "#4a148c"
+    link: "#4a148c"
+    section_title: "#c2185b" 
