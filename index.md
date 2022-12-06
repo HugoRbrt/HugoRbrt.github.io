@@ -34,7 +34,6 @@ We have studied device usage preferences over time, but what about the content v
 We can observe that most of the topics are as well consulted on mobile as on desktop except some particular topics like STEM much more consulted on desktop, and biography much more consulted on mobile. These observations confirm the fact that the mobile is used for topics related to culture while the desktop is preferred for more complex information searches. The mobile remains the preferred tool for casual scenarios, while the desktop is more often used in a more complicated and serious work environment. 
 Finally, we can also note the fact that video games are more often consulted on desktop, this is due to the fact that the game experience is more adapted to desktop and that some games are only available on desktop.
 
-
 ## Part 2 - Is there any difference regarding the place people prefer to use mobile and desktop?
 
 
