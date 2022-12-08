@@ -40,15 +40,15 @@ We could observe the consumption habits of people according to the device they u
 
 For this we have isolated all Wikipedia topics related to covid, and we will now study the correlation for each country between covid-related events (number of cases and deaths, measures taken in the country) and covid-related searches.  
 
-<img align = "center" src="data/fig2-1.jpg" width="100%"> 
+<img align = "center" src="data/fig2-1.png" width="100%"> 
 
 In most of cases, the maximum researches intensity is on the mobility changepoint. In Italy, covid researches percentage curve follows the same trend as number of deaths per days. But for France, trends are delayed. That's due to the fact that French people reacted at the same time as their Italian neighbours because the news are shared in media.
 
-<img align = "center" src="data/fig2-2.jpg" width="100%"> 
+<img align = "center" src="data/fig2-2.png" width="100%"> 
 
 Here, we can see that the similarity between cases and researches is always more intense that the one between deaths and researches. It means that the way to count cases is very important because it could bias reaction of people on their research about covid. On the plot, we can see that countries from Western Europe are more sensitive than others (France, Germany, Italy) and they have pretty the same reaction because the covid spreads almost at the same time on their population. Norway and Finland are more moderate, the relation between number of declared cases and covid research on wikipedia is less intense. But again we found a geographical link.
 
-<img align = "center" src="data/fig2-3.jpg" width="100%"> 
+<img align = "center" src="data/fig2-3.png" width="100%"> 
 
 Here we can see that for example for Japanese, covid researches was already intense before the Mobility Changepoint. For Korean, they remain intense after the Normalcy Changepoint.
 
@@ -60,14 +60,14 @@ We have studied the impact of the habit of searching on Wikipedia according to t
 
 First, for each country, calculate the correlation coefficient between the mobile usage ratio using the Pearson correlation coefficient.
 
-<img align = "center" src="data/fig3-1.jpg" width="100%"> 
+<img align = "center" src="data/fig3-1.png" width="100%"> 
 
 We can observe that for each country, the trends observed during the week intensify on weekends. However, the findings are different from country to country.
 In Asian countries, the use of the smartphone is mostly correlated to its presence at home, this is the opposite trend that is observed in other countries of the world where precisely all places can have a more or less strong correlation with the use of the smartphone except the place of residence.
 
 To make this observation more readable, we can observe on the figure below the strong correlation between the use of the cell phone and the time spent at home for countries like Japan or South Korea, while this observation is impossible to make for the other countries studied.
 
-<img align = "center" src="data/fig3-2.jpg" width="100%"> 
+<img align = "center" src="data/fig3-2.png" width="100%"> 
 
 ## Conclusion
 
