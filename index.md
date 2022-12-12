@@ -78,7 +78,7 @@ To make this observation more readable, we can observe on the figure below the s
 
 blablabla
 
-<object type="text/html" data="data/test.html" width="1230", height="500"></object>
+<object type="text/html" data="data/test.html" width="100%", height="50%"></object>
 
 ## Note
 
