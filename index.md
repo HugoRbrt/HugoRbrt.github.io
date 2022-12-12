@@ -61,7 +61,9 @@ If we regard the vector of percentage of each topic from one day as a data point
 
 By analyzing the topics that explain the most of the variance after doing PCA for all the language regions, we see that the main topics in which these two type of devices differ are Biography, Sports, STEM, and Techonology. This is very similar to the results we get from the above statistic test part where we find Biography, sports are searched more on mobile while STEM and Technology more on desktop in all language regions.
 
-<img align = "center" src="data/pca.jpg" width="70%"> 
+<p align="center">
+<img  src="data/pca.jpg" width="70%"> 
+</p>
 
 ## Evidence from machine learning
 As we see from the result of PCA that the two classes of data pints seem to be separatable, we want to further confirm how well we can separate them by training classifier on the data. We try three different classifier on the dataset: logistic regression, random forest, and xgboost. The training and testing are done separately for different language regions. This has the same idea with observational studies, to try to make the two classes have as close observed and unoberved covariates as possible.
