@@ -9,7 +9,7 @@ The covid crisis has caused a change in our habits and ways of consuming multime
 
 First of all, to be able to observe the impact of covid on our habits, it is important to observe the trends before these events, for that we are going to study the evolution of people's habits before the arrival of the covid events between January 2018 and January 2020 (MODIFY LIMIT ON THE GRAPH BELOW)
 
-<img align = "center" src="data/fig1.jpg" width="100%"> 
+<img align = "center" src="data/fig1.jpg" width="90%"> 
 
 We can observe that no matter the country, the smartphone is the main tool for Wikipedia searches, and even if the desktop still represents a significant part of the consultations, it loses more and more its interest with time. This observation is consistent with the observation that smartphones are used more and more intensively over time, while desktop are more often associated with more serious work-related tasks 
 
