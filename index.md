@@ -13,7 +13,7 @@ First of all, to be able to observe the impact of covid on our habits, it is imp
 We begin the analysis by first taking a look at how Wikipedia search differs from mobile and desktop device on a volumetric-wise level. The follwing figure shows that people have an overall preference in using mobile device than desktop. 
 <!-- No matter the country, the mobile device such as smartphone is the main tool for Wikipedia searches, and even if the desktop still represents a significant part of the consultations, it loses more and more its interest with time. This observation is consistent with the observation that smartphones are used more and more intensively over time, while desktop are more often associated with more serious work-related tasks. -->
 
-<img align = "center" src="data/fig1.jpg" width="100%"> 
+<img align = "center" src="data/fig1.png" width="100%"> 
 
 We also notice that there are perodical spikes in the plots. Why do thoses perodical spikes occur? One possibility might be the result from  people's different routines during the weekdays and on weekends. To verify this, we next plot the pageviews from desktop device during weekdays and on weekend by different colors to see if there is consistent difference between them.
 
