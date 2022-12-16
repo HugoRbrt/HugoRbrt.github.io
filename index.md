@@ -121,25 +121,5 @@ To make this observation more readable, we can observe on the figure below the s
 
 ### About Us
 
-blablabla
-
-<object type="text/html" data="data/test.html" width=1230 height=500></object>
-
-## Note
-
- **some bold text**
-*Italic text*
-
-
-
-| A | B      |C |  |D |
-|------------------|------------|----------------------| |------------------|
-| A1 | B1 | C1             | | D1         |
-| A2   | B2 | C2              | |D2      |
-  
-
-> "quote example"
-
-
 
 
