@@ -93,6 +93,10 @@ The basic idea behind DTW is to align two sequences in a way that minimizes the 
 
 The similarity between cases and researches is always more intense that the one between deaths and researches. It means that the way to count cases is very important because it could bias reaction of people on their research about covid. On the plot, countries from Western Europe are more sensitive than others (France, Germany, Italy) and they have pretty the same reaction because the covid spreads almost at the same time on their population. Norway and Finland are more moderate, the relation between number of declared cases and covid research on wikipedia is less intense. But again there is a geographical link.
 
+## Does there remain a long-term effect after the return to calm ?
+
+When analyzing the distribution of Covid-19 data, it can be useful to use milestones as a way to compare the data over time or between different groups. For example, a milestone could be a changepoint in restrictions. Comparing the distribution of cases before and after a milestone can provide insight into the effectiveness of public health measures or the impact of other factors on the spread of the disease.
+
 <img align = "center" src="data/fig2-3.png" width="100%"> 
 
 Here we can see that for example for Japanese, covid researches was already intense before the Mobility Changepoint. For Korean, they remain intense after the Normalcy Changepoint.
