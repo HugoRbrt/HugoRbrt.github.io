@@ -73,7 +73,9 @@ The result of the parameter tuning and model selection shows that all of the thr
 We could observe the consumption habits of people according to the device they use, however these habits can vary from one country to another as we have seen. That's why we are going to the next study on the reactions of the different populations to the covid crisis, for that we are going to study if the types of wikipedia searches vary before and after the period of crisis crossed for each country. 
 ## Part 2 - How does people in different region react differently to Covid?
 
-For this we have isolated all Wikipedia topics related to covid, and we will now study the correlation for each country between covid-related events (number of cases and deaths, measures taken in the country) and covid-related searches.  
+In different regions, people have also been varying responses to government-imposed lockdowns and other measures to control the spread of the virus. Some people may support these measures, while others may resist them due to concerns about the economic impact or their own personal freedoms. Overall, the way that people in different regions react to Covid-19 can be complex and multifaceted, influenced by a range of factors such as cultural values, access to information and resources, and the effectiveness of government responses.
+
+For this we have isolated all Wikipedia topics related to covid, and we will now investigate if there is a link for each country between covid-related events (number of cases and deaths, measures taken in the country) and covid-related searches.  
 
 <img align = "center" src="data/fig2-1.png" width="100%"> 
 
