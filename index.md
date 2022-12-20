@@ -132,8 +132,3 @@ To make this observation more readable, we can observe on the figure below the s
 
 
 
-
-### About Us
-
-
-
