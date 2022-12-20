@@ -75,15 +75,23 @@ We could observe the consumption habits of people according to the device they u
 
 In different regions, people have also been varying responses to government-imposed lockdowns and other measures to control the spread of the virus. Some people may support these measures, while others may resist them due to concerns about the economic impact or their own personal freedoms. Overall, the way that people in different regions react to Covid-19 can be complex and multifaceted, influenced by a range of factors such as cultural values, access to information and resources, and the effectiveness of government responses.
 
-For this we have isolated all Wikipedia topics related to covid, and we will now investigate if there is a link for each country between covid-related events (number of cases and deaths, measures taken in the country) and covid-related searches.  
+For this we have isolated all Wikipedia topics related to covid, and we will now investigate if there is a link for each country between covid-related events (number of cases and deaths, measures taken in the country) and covid-related searches. The beginning of each time series is setting to the day of the first case in the country representating the language.  
 
 <img align = "center" src="data/fig2-1.png" width="100%"> 
 
-In most of cases, the maximum researches intensity is on the mobility changepoint. In Italy, covid researches percentage curve follows the same trend as number of deaths per days. But for France, trends are delayed. That's due to the fact that French people reacted at the same time as their Italian neighbours because the news are shared in media.
+In most of cases, the maximum researches intensity is on the mobility changepoint. In Italy, covid searches percentage curve follows the same trend as number of deaths per days. But for France, trends are delayed. That's due to the fact that French people reacted at the same time as their Italian neighbours because the news are shared in media.
 
-<img align = "center" src="data/fig2-2.png" width="70%"> 
+## Are people sensitive to the communication of the number of deaths or of new cases ?
 
-Here, we can see that the similarity between cases and researches is always more intense that the one between deaths and researches. It means that the way to count cases is very important because it could bias reaction of people on their research about covid. On the plot, we can see that countries from Western Europe are more sensitive than others (France, Germany, Italy) and they have pretty the same reaction because the covid spreads almost at the same time on their population. Norway and Finland are more moderate, the relation between number of declared cases and covid research on wikipedia is less intense. But again we found a geographical link.
+To answer this question, it is necessary to introduce a method to compare two time series : Dynamic Time Warping (DTW).
+
+It is an algorithm that is used to measure the similarity between two sequences, regardless of their length or timing. It is often used in speech recognition and music analysis, but it can also be applied to other types of data that vary over time, in this case : covid searches and deaths/new cases covid data. 
+
+The basic idea behind DTW is to align two sequences in a way that minimizes the cumulative distance between them. DTW is useful in situations where the time intervals between events in the two sequences are not necessarily the same, or where the sequences may have different lengths. It allows for the comparison of sequences that may have been recorded at different times or at different rates, and can be used to identify patterns or trends that may not be apparent when looking at the sequences individually.
+
+<img align = "center" src="data/dynamic.png" width="70%"> 
+
+The similarity between cases and researches is always more intense that the one between deaths and researches. It means that the way to count cases is very important because it could bias reaction of people on their research about covid. On the plot, countries from Western Europe are more sensitive than others (France, Germany, Italy) and they have pretty the same reaction because the covid spreads almost at the same time on their population. Norway and Finland are more moderate, the relation between number of declared cases and covid research on wikipedia is less intense. But again there is a geographical link.
 
 <img align = "center" src="data/fig2-3.png" width="100%"> 
 
