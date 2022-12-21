@@ -13,7 +13,7 @@ First of all, to be able to observe the impact of covid on our habits, it is imp
 We begin the analysis by first taking a look at how Wikipedia search differs from mobile and desktop device on a volumetric-wise level. The follwing figure shows that people have an overall preference in using mobile device than desktop. 
 <!-- No matter the country, the mobile device such as smartphone is the main tool for Wikipedia searches, and even if the desktop still represents a significant part of the consultations, it loses more and more its interest with time. This observation is consistent with the observation that smartphones are used more and more intensively over time, while desktop are more often associated with more serious work-related tasks. -->
 
-<img align = "center" src="data/fig1.jpg" width="100%"> 
+<img align = "center" src="data/fig1.png" width="100%"> 
 
 We also notice that there are perodical spikes in the plots. Why do thoses perodical spikes occur? One possibility might be the result from  people's different routines during the weekdays and on weekends. To verify this, we next plot the pageviews from desktop device during weekdays and on weekend by different colors to see if there is consistent difference between them.
 
@@ -53,7 +53,7 @@ Till now, we only do the analysis based on visualization of the data from one da
 
 ## Does the statistic test confirm the difference?
 Before doing the test, we get the boxplot of the gap of pageview percentage of each topic. The follwing figure is an example of the result from Serbian. But again, after inspecting the result for all languages, we have some general findings. We notice that for most of the topics, the difference is distributed around zero. But for technology and STEM.STEM, the pageview percentage from desktop is almost always higher in all languages and for biography always lower.
-<img align = "center" src="data/boxplot.jpg" width="100%"> 
+<img align = "center" src="data/boxplot.jpg" width="80%"> 
 
 We further analyze the difference in a more rigorous way by carrying out paired t test. In the statistic test, the tested two series are the percentage of one topic from desktop and mobile from 01/01/2018 (except for swedish). We do the statistic test for all the topics to see for which topics the difference is significant with a significant level of 0.05. From the result of the test, we find that all of the 12 languages have a number of siginificant topics more than 60, which means the difference between the pageview percent from desktop and mobile device is significant for over 60 topics. This indicates a significant difference of people's search pattern from the two type of devices.
 
@@ -73,15 +73,29 @@ The result of the parameter tuning and model selection shows that all of the thr
 We could observe the consumption habits of people according to the device they use, however these habits can vary from one country to another as we have seen. That's why we are going to the next study on the reactions of the different populations to the covid crisis, for that we are going to study if the types of wikipedia searches vary before and after the period of crisis crossed for each country. 
 ## Part 2 - How does people in different region react differently to Covid?
 
-For this we have isolated all Wikipedia topics related to covid, and we will now study the correlation for each country between covid-related events (number of cases and deaths, measures taken in the country) and covid-related searches.  
+In different regions, people have also been varying responses to government-imposed lockdowns and other measures to control the spread of the virus. Some people may support these measures, while others may resist them due to concerns about the economic impact or their own personal freedoms. Overall, the way that people in different regions react to Covid-19 can be complex and multifaceted, influenced by a range of factors such as cultural values, access to information and resources, and the effectiveness of government responses.
+
+For this we have isolated all Wikipedia topics related to covid, and we will now investigate if there is a link for each country between covid-related events (number of cases and deaths, measures taken in the country) and covid-related searches. The beginning of each time series is setting to the day of the first case in the country representating the language.  
 
 <img align = "center" src="data/fig2-1.png" width="100%"> 
 
-In most of cases, the maximum researches intensity is on the mobility changepoint. In Italy, covid researches percentage curve follows the same trend as number of deaths per days. But for France, trends are delayed. That's due to the fact that French people reacted at the same time as their Italian neighbours because the news are shared in media.
+In most of cases, the maximum researches intensity is on the mobility changepoint. In Italy, covid searches percentage curve follows the same trend as number of deaths per days. But for France, trends are delayed. That's due to the fact that French people reacted at the same time as their Italian neighbours because the news are shared in media.
 
-<img align = "center" src="data/fig2-2.png" width="100%"> 
+## Are people sensitive to the communication of the number of deaths or of new cases ?
 
-Here, we can see that the similarity between cases and researches is always more intense that the one between deaths and researches. It means that the way to count cases is very important because it could bias reaction of people on their research about covid. On the plot, we can see that countries from Western Europe are more sensitive than others (France, Germany, Italy) and they have pretty the same reaction because the covid spreads almost at the same time on their population. Norway and Finland are more moderate, the relation between number of declared cases and covid research on wikipedia is less intense. But again we found a geographical link.
+To answer this question, it is necessary to introduce a method to compare two time series : Dynamic Time Warping (DTW).
+
+It is an algorithm that is used to measure the similarity between two sequences, regardless of their length or timing. It is often used in speech recognition and music analysis, but it can also be applied to other types of data that vary over time, in this case : covid searches and deaths/new cases covid data. 
+
+The basic idea behind DTW is to align two sequences in a way that minimizes the cumulative distance between them. DTW is useful in situations where the time intervals between events in the two sequences are not necessarily the same, or where the sequences may have different lengths. It allows for the comparison of sequences that may have been recorded at different times or at different rates, and can be used to identify patterns or trends that may not be apparent when looking at the sequences individually.
+
+<img align = "center" src="data/dynamic.png" width="70%"> 
+
+The similarity between cases and researches is always more intense that the one between deaths and researches. It means that the way to count cases is very important because it could bias reaction of people on their research about covid. On the plot, countries from Western Europe are more sensitive than others (France, Germany, Italy) and they have pretty the same reaction because the covid spreads almost at the same time on their population. Norway and Finland are more moderate, the relation between number of declared cases and covid research on wikipedia is less intense. But again there is a geographical link.
+
+## Does there remain a long-term effect after the return to calm ?
+
+When analyzing the distribution of Covid-19 data, it can be useful to use milestones as a way to compare the data over time or between different groups. For example, a milestone could be a changepoint in restrictions. Comparing the distribution of cases before and after a milestone can provide insight into the effectiveness of public health measures or the impact of other factors on the spread of the disease.
 
 <img align = "center" src="data/fig2-3.png" width="100%"> 
 
@@ -102,34 +116,19 @@ In Asian countries, the use of the smartphone is mostly correlated to its presen
 
 To make this observation more readable, we can observe on the figure below the strong correlation between the use of the cell phone and the time spent at home for countries like Japan or South Korea, while this observation is impossible to make for the other countries studied.
 
-<img align = "center" src="data/fig3-2.png" width="100%"> 
+<img align = "center" src="data/fig3-2-1.png" width="100%"> 
+<img align = "center" src="data/fig3-2-2.png" width="100%"> 
+<img align = "center" src="data/fig3-2-3.png" width="100%"> 
+<img align = "center" src="data/fig3-2-4.png" width="100%"> 
+<img align = "center" src="data/fig3-2-5.png" width="100%"> 
+<img align = "center" src="data/fig3-2-6.png" width="100%"> 
+<img align = "center" src="data/fig3-2-7.png" width="100%"> 
+<img align = "center" src="data/fig3-2-8.png" width="100%"> 
+<img align = "center" src="data/fig3-2-9.png" width="100%"> 
+<img align = "center" src="data/fig3-2-10.png" width="100%"> 
+<img align = "center" src="data/fig3-2-11.png" width="100%"> 
 
 ## Conclusion
-
-
-
-
-### About Us
-
-blablabla
-
-<object type="text/html" data="data/test.html" width=1230 height=500></object>
-
-## Note
-
- **some bold text**
-*Italic text*
-
-
-
-| A | B      |C |  |D |
-|------------------|------------|----------------------| |------------------|
-| A1 | B1 | C1             | | D1         |
-| A2   | B2 | C2              | |D2      |
-  
-
-> "quote example"
-
 
 
 
