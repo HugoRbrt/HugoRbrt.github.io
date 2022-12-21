@@ -35,10 +35,14 @@ Before conducting quantative analysis, we first do a qualitive analysis on the d
 
 The following figures give an example of the result from Serbian. As explained before, the width of the edges indicate the frequency of the connected two topics appear together in the top 10 search topics, and the size of the topic represents an overall search percentage. We can see that the topics with the highest search percent are also the most connected, which indicates there is a consistency of the top search topics everyday. By inspecting the graphs for all languages, we find that this trend exists in all of them. Regarding the topics, we find that people in all the language regions are interested in topics related to Europe, STEM, and sports.
 
-<p float="middle">
+<!-- <p float="middle">
   <img src="data/Sr_d.jpg" width="49%" />
   <img src="data/Sr_m.jpg" width="49%" /> 
-</p>
+</p> -->
+<img align = "center" src="data/Sr_d.jpg" width="90%">
+<img align = "center" src="data/Sr_m.jpg" width="90%"> 
+
+
 
 ## A first glance into the difference regrading topics
 After inspecting the data from volumetric level and investigating the prevalent topics from these two types of device, the next analysis we carry out is about the difference between desktop and mobile devices on topicwise level. For this part, we do the analysis by doing visualization and contextual analysis based on common sense. The next figure is a example from Serbian, it shows the difference of the percentage of each topic searched from mobile and desktop from one day.
