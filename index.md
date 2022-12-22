@@ -39,8 +39,11 @@ The following figures give an example of the result from Serbian. As explained b
   <img src="data/Sr_d.jpg" width="49%" />
   <img src="data/Sr_m.jpg" width="49%" /> 
 </p> -->
-<img align = "center" src="data/Sr_d.jpg" width="90%">
-<img align = "center" src="data/Sr_m.jpg" width="90%"> 
+<p align="center">
+<img src="data/Sr_d.jpg" width="80%"> 
+<img src="data/Sr_m.jpg" width="80%"> 
+</p>
+
 
 
 
@@ -57,7 +60,10 @@ Till now, we only do the analysis based on visualization of the data from one da
 
 ## Does the statistic test confirm the difference?
 Before doing the test, we get the boxplot of the gap of pageview percentage of each topic from the two types of devices. The follwing figure is an example of the result from Serbian. But again, after inspecting the result for all languages, we have some general findings. We notice that for most of the topics, the difference is distributed around zero. But for technology and STEM.STEM, the pageview percentage from desktop is almost always higher in all languages and for biography always lower.
-<img align = "center" src="data/boxplot.jpg" width="80%"> 
+
+<p align="center">
+<img src="data/boxplot.jpg" width="80%"> 
+</p>
 
 We further analyze the difference in a more rigorous way by carrying out paired t test. In the statistic test, the tested two series are the percentage of one topic from desktop and mobile from 01/01/2018 to 31/07/2020 (except for swedish). We do the statistic test for all the topics to see for which topics the difference is significant with a significant level of 0.05. From the result of the test, we find that all of the 12 languages have more than 60 siginificant topics, which means the difference between the pageview percent from desktop and mobile device is significant for over 60 topics. This indicates a significant difference of people's search pattern from the two type of devices.
 
