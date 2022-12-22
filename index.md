@@ -126,6 +126,15 @@ First, for each country, calculate the correlation coefficient between the mobil
 We can observe that for each country, the trends observed during the week intensify on weekends. However, the findings are different from country to country.
 In Asian countries, the use of the smartphone is mostly correlated to its presence at home, this is the opposite trend that is observed in other countries of the world where precisely all places can have a more or less strong correlation with the use of the smartphone except the place of residence.
 
+To confirm our observation that countries with a closer cultural backgrounds share simliar mobile usage patterns, we applied k-means clustering based on a 12-dimensional feature vector consisting of the correlation coefficients. The following results show that the only two East-Asian countries Japan and South Korea always belong to their own cluster, and the Nordic countries are also clustered together.
+- k = 2
+  - Cluster 1:Japan,South Korea,
+  - Cluster 2:Italy,Netherlands,Sweden,Finland,Germany,Norway,Denmark,Serbia,Turkey,
+- k = 3
+  - Cluster 1:Italy,Netherlands,Sweden,Finland,Norway,Denmark,
+  - Cluster 2:Japan,South Korea,
+  - Cluster 3:Germany,Serbia,Turkey,
+
 To make this observation more readable, we can observe on the figure below the strong correlation between the use of the cell phone and the time spent at home for countries like Japan or South Korea, while this observation is impossible to make for the other countries studied.
 
 <img align = "center" src="data/fig3-2-1.png" width="100%"> 
@@ -139,6 +148,12 @@ To make this observation more readable, we can observe on the figure below the s
 <img align = "center" src="data/fig3-2-9.png" width="100%"> 
 <img align = "center" src="data/fig3-2-10.png" width="100%"> 
 <img align = "center" src="data/fig3-2-11.png" width="100%"> 
+
+Another interesting phenomenon we can observe from the plots is that the mobile usage percentage increase during the summer period for most countries. Is this because that people are traveling more because of the covid situation has improved? Or is it just a usual seasonal pattern that exists even before covid? To answer this question, we performed a difference-in-difference analysis to compare the change of mobile percentage between 2020 and 2019m and that of 2019 and 2018. The results show that except for Turkey, the change of mobile percentage did not increase in the 2019-2020 period. Therefore we conclude that the increased mobile usage during the summer of 2020 is only a seasonal effect, and covid has not amplified it.
+
+<img align="center" src="data/fig_diff_in_diff.png" width="100%">
+
+
 
 ## Conclusion
 
