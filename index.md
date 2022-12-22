@@ -156,6 +156,13 @@ Another interesting phenomenon we can observe from the plots is that the mobile 
 
 
 ## Conclusion
+In this research, we analyzed the search pattern of wikipedia users, and the effect of the covid pandemic on it.
+
+In the first part, we discovered several phenomenom regarding the wikipedia search pattern on mobile and desktop devices. First of all, the desktop usage percentage during weekdays are more than weekends, which is explainable because that people mostly use desktop device at work and mobile devices during their leisure time. Another interesting result is that the distribution of search topics are different in mobile and desktop searches. This finding is confirmed by a  statistical tests, and also by being able to train a machine learning model to discriminate these two topic distributions accurately.
+
+Next, we explored how covid has influenced people's search pattern on wikipedia. We start by analyzing the relationship between the number of covid-related wikipedia searches and the local pandemic development (represented by number of new cases/new deaths, and the mobility changepoints). The results show that some characteristics are shared by all countries (e.g. The number of searches has a higher relationship with the number of new cases than new deaths), but others can only be observed from specific countries (e.g. In Japan and South Korean, the number of searches remain high even after the mobility level returns to normal). 
+
+Beside analyzing covid-related searches, we also investigate the relationship of time spend at different category of places and the mobile usage percentage. The results revealed that the corrrelation is different for each country, and countries with similiar culture have similar correlations when we apply K-means clustering on their correlation coefficients. 
 
 
 
